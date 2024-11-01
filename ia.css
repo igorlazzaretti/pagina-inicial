@@ -5,6 +5,9 @@ body {
     /* Fundo bege */
     font-family: monospace;
     /* Fonte com estilo retrô */
+    width: 95vw;
+    height: 95vh;
+    box-sizing: border-box;
 }
 
 .container {
@@ -16,10 +19,12 @@ body {
     grid-template-columns: 1fr 4fr;
     /* Proporção das colunas */
     grid-gap: 10px;
+    height: 81vh;
+    width: 95%;
     border: 5px solid black;
     /* Borda preta */
     padding: 20px;
-    margin: 30px;
+    margin: 30px 30px 30px 3.5vw;
 }
 
 .header {
@@ -27,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 89vw;
 }
 
 #horario {
@@ -34,24 +40,33 @@ body {
 }
 
 .main {
-    height: 80vh;
+    height: 20vw;
     width: 90vw;
-    display: flex;           /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    flex-wrap: wrap;         /* Permite que os itens  
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: flex-start;
+    /* Centraliza verticalmente */
+    flex-wrap: wrap;
+    /* Permite que os itens  
                              quebrem em várias linhas se necessário */
-    gap: 20px;               /* Adiciona espaço entre os labels */
+    gap: 20px;
+    /* Adiciona espaço entre os labels */
+    padding: 120px 0 100px 0;
 }
 
 .main label {
     width: 70px;
     display: flex;
-    flex-direction: column;  /* Alinha a imagem e o texto verticalmente */
-    align-items: center;      /* Centraliza a imagem e o texto horizontalmente */
-    cursor: pointer;         /* Muda o cursor para indicar que é clicável */
+    flex-direction: column;
+    /* Alinha a imagem e o texto verticalmente */
+    align-items: center;
+    /* Centraliza a imagem e o texto horizontalmente */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 
-    &:hover{
+    &:hover {
         transform: scale(1.2);
         transition: all 0.2s;
     }
@@ -92,4 +107,8 @@ body {
 .footer {
     grid-area: footer;
     text-align: center;
+    width: 94vw;
+    justify-content: center;
+    align-items: center;
+    display: none;
 }
