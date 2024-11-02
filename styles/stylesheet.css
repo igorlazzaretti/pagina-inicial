@@ -40,35 +40,50 @@ body {
     font-size: clamp(8px, 8vw, 35px);
 }
 
-
 .main {
     height: 20vw;
     width: 65vw;
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: flex-start; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que os itens  
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: flex-start;
+    /* Centraliza verticalmente */
+    flex-wrap: wrap;
+    /* Permite que os itens  
                      quebrem em várias linhas se necessário */
-    gap: 20px; /* Adiciona espaço entre os labels */
+    gap: 20px;
+    /* Adiciona espaço entre os labels */
     margin-left: 17%;
+    margin-top: -100px;
 }
 
 .main label {
-    width: 80px;
+    width: 70px;
     display: flex;
-    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
-    align-items: center; /* Centraliza a imagem e o texto horizontalmente */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    flex-direction: column;
+    /* Alinha a imagem e o texto verticalmente */
+    align-items: center;
+    /* Centraliza a imagem e o texto horizontalmente */
+    cursor: pointer;
+
+    /* Muda o cursor para indicar que é clicável */
     &:hover {
         transform: scale(1.15);
         transition: ease-in-out 0.5s;
     }
 }
 
-.main img {
+.main label img {
     border-radius: 40px;
     width: 60px;
+    height: 60px;
+    object-fit: contain;
     margin-bottom: 7px;
+}
+
+.main label p {
+    font-size: 1.1rem;
 }
 
 .logo {
